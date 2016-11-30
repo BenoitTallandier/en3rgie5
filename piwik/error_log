@@ -1,0 +1,46 @@
+[21-Jun-2016 09:32:33 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'The configuration file {/home/enrgtnyv/public_html/piwik/config/config.ini.php} has not been found or could not be read.' in /home/enrgtnyv/public_html/piwik/core/Application/Kernel/EnvironmentValidator.php:63
+Stack trace:
+#0 /home/enrgtnyv/public_html/piwik/core/Application/Kernel/EnvironmentValidator.php(44): Piwik\Application\Kernel\EnvironmentValidator->checkConfigFileExists('/home/enrgtnyv/...', false)
+#1 /home/enrgtnyv/public_html/piwik/core/Application/Environment.php(185): Piwik\Application\Kernel\EnvironmentValidator->validate()
+#2 /home/enrgtnyv/public_html/piwik/core/Application/Environment.php(94): Piwik\Application\Environment->validateEnvironment()
+#3 /home/enrgtnyv/public_html/piwik/piwik.php(56): Piwik\Application\Environment->init()
+#4 {main}
+  thrown in /home/enrgtnyv/public_html/piwik/core/Application/Kernel/EnvironmentValidator.php on line 63
+[21-Jun-2016 10:08:21 UTC] Error in Piwik: Vous êtes connecté en tant que 'marlonn' mais il semble que nous n'ayez aucune permission définie dans Piwik.  Demandez à votre administrateur (cliquez pour envoyer un e-mail) de vous donner l'accès 'Consultation' à un site web.&nbsp;&nbsp;&nbsp;&rsaquo; Déconnexion
+[01-Jul-2016 21:29:18 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 05:21:26 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 06:42:33 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 06:52:53 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 06:53:33 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 06:54:25 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 104 "Connection reset by peer"
+[02-Jul-2016 06:54:32 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 07:20:19 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 07:20:19 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 07:58:43 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 08:04:05 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 08:50:43 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 08:57:48 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[02-Jul-2016 09:03:56 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[18-Jul-2016 22:52:24 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[18-Aug-2016 20:15:18 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[18-Aug-2016 20:55:06 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[18-Aug-2016 20:58:06 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[18-Aug-2016 20:58:24 UTC] Error in Piwik (tracker): Error query: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away In query: SELECT MIN(idaction) as idaction, type, name FROM piwik_log_action WHERE ( hash = CRC32(?) AND name = ? AND type = ? )  OR ( hash = CRC32(?) AND name = ? AND type = ? )  GROUP BY type, hash, name Parameters: array (   0 => 'EN3RGIE5',   1 => 'EN3RGIE5',   2 => 4,   3 => 'en3rgie5.com/',   4 => 'en3rgie5.com/',   5 => 1, )
+[18-Aug-2016 20:58:25 UTC] Error in Piwik (tracker): Error query: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away In query: SELECT visit_last_action_time, visit_first_action_time, idvisitor, idvisit, user_id, visit_exit_idaction_url, visit_exit_idaction_name, visitor_returning, visitor_days_since_first, visitor_days_since_order, visitor_count_visits, visit_goal_buyer, location_country, location_region, location_city, location_latitude, location_longitude, referer_name, referer_keyword, referer_type, visit_total_actions, visit_total_searches, visit_total_events, visit_total_time, location_ip, location_browser_lang, custom_var_k1, custom_var_v1, custom_var_k2, custom_var_v2, custom_var_k3, custom_var_v3, custom_var_k4, custom_var_v4, custom_var_k5, custom_var_v5   FROM piwik_log_visit WHERE visit_last_action_time >= ? AND visit_last_action_time <= ? AND idsite = ? AND idvisitor = ?                 ORDER BY visit_last_action_time DESC                 LIMIT 1 Parameters: array (   0 => '2016-08-18 20:28:21',   1 => '2016-08-18 21:28:21',   2 => 1,   3 => '8U&�m�', )
+[18-Aug-2016 21:03:29 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")
+[19-Aug-2016 22:26:36 UTC] Error in Piwik (tracker): Error query: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away In query: SELECT * FROM piwik_goal                                 WHERE idsite IN (1)                                       AND deleted = 0 Parameters: array ( )
+[09-Sep-2016 11:41:50 UTC] Error in Piwik (tracker): Error query: SQLSTATE[HY000]: General error: 2013 Lost connection to MySQL server during query In query: SELECT option_value FROM `piwik_option` WHERE option_name = ? Parameters: array (   0 => 'enableBrowserTriggerArchiving', )
+[13-Oct-2016 18:06:33 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[13-Oct-2016 18:07:38 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[13-Oct-2016 18:10:45 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[13-Oct-2016 18:12:31 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[15-Oct-2016 06:30:12 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[15-Oct-2016 06:30:44 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[16-Oct-2016 11:42:30 UTC] Error in Piwik (tracker): SQLSTATE[HY000] [1040] Too many connections
+[16-Oct-2016 11:45:35 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[16-Oct-2016 11:45:39 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[16-Oct-2016 11:45:49 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[16-Oct-2016 11:46:17 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[27-Oct-2016 09:10:58 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[31-Oct-2016 12:48:02 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
+[31-Oct-2016 12:50:17 UTC] Error in Piwik (tracker): SQLSTATE[08004] [1040] Too many connections
